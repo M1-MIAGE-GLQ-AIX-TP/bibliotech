@@ -34,9 +34,9 @@ public class LibraryManager {
     // Configuration en dur 
     private static final double PENALTY_RATE_PER_DAY = 0.50;
     private static final int MAX_RENEWALS = 2;
-    private static final int STUDENT_LOAN_DURATION = 14;
-    private static final int TEACHER_LOAN_DURATION = 30;
-    private static final int DEFAULT_LOAN_DURATION = 21;
+    private static final int STUDENT_LOAN_DURATION_DAYS = 14;
+    private static final int TEACHER_LOAN_DURATION_DAYS = 30;
+    private static final int DEFAULT_LOAN_DURATION_DAYS = 21;
     
     // Constructeur privé pour le singleton
     private LibraryManager() {
