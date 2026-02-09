@@ -12,7 +12,7 @@ public class PenaltyCalculator {
 
   /** Calcule la pénalité de retard. */
   public double calculatePenalty(Member member, int daysOverdue) {
-
-    return penaltyPolicyFactory.getPolicy(member.getMemberType()).calculatePenalty(daysOverdue);
+    PenaltyPolicy policy = penaltyPolicyFactory.getPolicy(member.getMemberType());
+    return policy.calculatePenalty(daysOverdue);
   }
 }
